@@ -19,13 +19,7 @@
             --text-light: #777;
             --transition: all 0.3s ease;
         }
-        /* :root {
-    --text-color: #2c3e50;
-    --primary-color: #4CAF50;
-    --transition: 0.3s ease;
-} */
-
-
+        
         html {
             scroll-behavior: smooth;
         }
@@ -86,52 +80,52 @@
         }
 
         .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 24px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 24px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
 
-.nav-links li a {
-    position: relative;
-    text-decoration: none;
-    color: var(--text-color, #2c3e50);
-    font-weight: 600;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: color 0.3s ease;
-}
+        .nav-links li a {
+            position: relative;
+            text-decoration: none;
+            color: var(--text-color, #2c3e50);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: color 0.3s ease;
+        }
 
-.nav-links li a:hover {
-    color: var(--primary-color, #4CAF50);
-}
+        .nav-links li a:hover {
+            color: var(--primary-color, #4CAF50);
+        }
 
-.nav-links li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-color, #4CAF50);
-    transition: width 0.3s ease;
-}
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color, #4CAF50);
+            transition: width 0.3s ease;
+        }
 
-.nav-links li a:hover::after {
-    width: 100%;
-}
+        .nav-links li a:hover::after {
+            width: 100%;
+        }
 
-.hamburger {
-    display: none;
-    font-size: 1.6rem;
-    color: var(--primary-color, #4CAF50);
-    cursor: pointer;
-}
+        .hamburger {
+            display: none;
+            font-size: 1.6rem;
+            color: var(--primary-color, #4CAF50);
+            cursor: pointer;
+        }
 
 
         /* Hero Section */
@@ -353,7 +347,7 @@
         }
 
         .project-tags span {
-            background: rgba(232, 240, 254, 0.8);
+            background: rgba(232, 235, 254, 0.8);
             color: var(--primary-blue);
             padding: 5px 10px;
             border-radius: 20px;
@@ -573,7 +567,7 @@
             height: 250px;
         }
 
-        .gallery-item img {
+        .gallery-item img {animation-iteration-count: ;
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -820,20 +814,20 @@
             }
 
             .btn-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 30px;
-}
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin-top: 30px;
+            }
 
-.btn-group .btn,
-.btn-group .btn-resume,
-.btn-group .btn-outline {
-  flex: 1;
-  min-width: max-content;
-  text-align: center;
-  white-space: nowrap;
-}
+            .btn-group .btn,
+            .btn-group .btn-resume,
+            .btn-group .btn-outline {
+                flex: 1;
+                min-width: max-content;
+                text-align: center;
+                white-space: nowrap;
+            }
 
 
             .btn-outline {
@@ -1079,70 +1073,69 @@
                 height: 220px;
             }
         }
-     #about {
-  padding: 100px 40px;
-  background: #f9fbff;
-}
 
-.about-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
+        #about {
+            padding: 100px 40px;
+            background: #f9fbff;
+        }
 
-.about-image-container {
-  flex: 1;
-  min-width: 300px;
-}
+        .about-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
 
-.trapezium-image {
-  width: 50%;
-  margin-left: 200px;
-  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
-  overflow: hidden;
-  transition: transform 0.4s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
+        .about-image-container {
+            flex: 1;
+            min-width: 300px;
+        }
 
-.trapezium-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.4s ease;
-}
+        .trapezium-image {
+            width: 50%;
+            margin-left: 200px;
+            clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+            overflow: hidden;
+            transition: transform 0.4s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
 
-.trapezium-image:hover img {
-  transform: scale(1.05);
-}
+        .trapezium-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s ease;
+        }
 
-.about-content-card {
-  flex: 1;
-  min-width: 300px;
-  margin-right: 200px;
-  background: linear-gradient(135deg, #ffffff 0%, #61dafb 100%);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transform: skewY(-2deg);
-}
+        .trapezium-image:hover img {
+            transform: scale(1.05);
+        }
 
-.about-content-card h2 {
-  font-size: 2.5rem;
-  color: #090ba9;
-  margin-bottom: 20px;
-  transform: skewY(2deg);
-}
+        .about-content-card {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 200px;
+            background: linear-gradient(135deg, #ffffff 0%, #61dafb 100%);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: skewY(-2deg);
+        }
 
-.about-content-card p {
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.6;
-  transform: skewY(2deg);
-}
+        .about-content-card h2 {
+            font-size: 2.5rem;
+            color: #090ba9;
+            margin-bottom: 20px;
+            transform: skewY(2deg);
+        }
 
-
+        .about-content-card p {
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+            transform: skewY(2deg);
+        }
     </style>
 </head>
 
@@ -1179,9 +1172,9 @@
                     <h4>A passionate Software Developer and Proactive Soul;<br>I specialize in creating
                         innovative solutions that drive results.</h4>
                     <div class="btn-group">
-                        
 
-                        <a href="https://drive.google.com/file/d/1D6vzUpwXQ2HirYgK4AnjUXVsr3bqHh5i/view?usp=drive_link"
+
+                        <a href="https://drive.google.com/file/d/1NKjOCpzdbX-hquEyXB90i6TtUQAC_dZS/view?usp=drive_link"
                             class="btn-resume"><i class="fa-solid fa-folder-open"></i> My Resume</a>
                         <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-keyboard"></i> Contact Me</a>
                     </div>
@@ -1189,8 +1182,7 @@
                 <div class="hero-image fade-in delay-1">
                     <div class="dynamic-frame">
                         <div class="photo-wrapper">
-                            <img src="images/my.jpg"
-                                alt="Mahek">
+                            <img src="images/my.jpg" alt="Mahek">
                         </div>
                         <div class="frame-edge frame-top"></div>
                         <div class="frame-edge frame-right"></div>
@@ -1213,7 +1205,8 @@
                 <p>
                     Hey! I'm Mahek — part caffeine, part code. A software developer by day and a
                     bug-slayer by night. I build tech with purpose (and occasionally, by accident 😅).
-                    If you don't find me coding, I’m probably organizing community events or explaining APIs to my plants
+                    If you don't find me coding, I’m probably organizing community events or explaining APIs to my
+                    plants
                     🌱.
                 </p>
             </div>
@@ -1304,7 +1297,7 @@
                             </div>
                             <p><b>Interactive dashboard in Tableau Visualize the Sales of TARGET over: years 2016, 2017,
                                     2018 and 2019. </b></p>
-                            <a href="#" class="btn">GitHub</a>
+                            <a href="https://github.com/mmahek/TargetSalesDataAnalysisDashBoardTableau" class="btn">GitHub</a>
                         </div>
                     </div>
                     <div class="project-card fade-in">
@@ -1451,12 +1444,14 @@
 
     <div class="video-cv-description-wrapper" style="text-align: center;">
         <div class="video-cv-description">
-            <p><b>This video highlights my technical skills, projects, and professional aspirations. In just 103 seconds,
-                you'll get to know my approach to problem-solving, my passion for technology, and what I can bring to
-                your team.</b></p>
+            <p><b>This video highlights my technical skills, projects, and professional aspirations. In just 103
+                    seconds,
+                    you'll get to know my approach to problem-solving, my passion for technology, and what I can bring
+                    to
+                    your team.</b></p>
         </div>
 
-        <a href="https://drive.google.com/file/d/1D6vzUpwXQ2HirYgK4AnjUXVsr3bqHh5i/view?usp=drive_link"
+        <a href="https://drive.google.com/file/d/1NKjOCpzdbX-hquEyXB90i6TtUQAC_dZS/view?usp=drive_link"
             class="download-cv" target="_blank">
             <i class="fas fa-download"></i> Download Full Resume
         </a>
@@ -2007,7 +2002,7 @@
 
         .certificates-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
 
@@ -2061,7 +2056,7 @@
 
         .specializations-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
 
@@ -2213,19 +2208,21 @@
             color: rgb(252, 252, 253);
             transform: scale(1.1);
         }
-        .container {
-  padding: 0 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* Community Development Section */
-#community-development {
-  padding: 4rem 2rem;
-  background-color: var(--container-color);
-  color: var(--text-color);
-}
-.community-section {
+        .container {
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Community Development Section */
+        #community-development {
+            padding: 4rem 2rem;
+            background-color: var(--container-color);
+            color: var(--text-color);
+        }
+
+        .community-section {
             max-width: 1000px;
             margin: 50px auto;
             padding: 20px;
@@ -2237,71 +2234,72 @@
             margin-bottom: 30px;
             color: #333;
         }
-.cdp__container {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  margin-top: 2rem;
-}
 
-.cdp__card {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+        .cdp__container {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin-top: 2rem;
+        }
 
-.cdp__card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
-}
+        .cdp__card {
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-.cdp__img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 0.8rem;
-  margin-bottom: 1rem;
-}
+        .cdp__card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
 
-.cdp__title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--title-color);
-  margin-bottom: 0.5rem;
-}
+        .cdp__img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 0.8rem;
+            margin-bottom: 1rem;
+        }
 
-.cdp__desc {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--text-color-light);
-}
+        .cdp__title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--title-color);
+            margin-bottom: 0.5rem;
+        }
 
-.cdp__btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  background-color: #2980b9;
-  color: #fff;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: background-color 0.3s;
-  text-decoration: none;
-}
+        .cdp__desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-color-light);
+        }
 
-.cdp__btn:hover {
-  background-color: #1f3a9e;
-}
+        .cdp__btn {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background-color: #2980b9;
+            color: #fff;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
 
-.cdp__certificate {
-  text-align: center;
-  margin-top: 2rem;
-}
+        .cdp__btn:hover {
+            background-color: #1f3a9e;
+        }
+
+        .cdp__certificate {
+            text-align: center;
+            margin-top: 2rem;
+        }
 
 
         /* Responsive Design */
@@ -2575,10 +2573,11 @@
             </div>
         </section>
     </section>
-    
+
     <section id="community-development" class="community-section">
         <div class="container">
-            <h2 class="community-section"> <i class="fa-solid fa-group-arrows-rotate"></i> Community Development Project</h2>
+            <h2 class="community-section"> <i class="fa-solid fa-group-arrows-rotate"></i> Community Development Project
+            </h2>
             <div class="cdp__container">
                 <!-- River Cleaning Drive -->
                 <div class="cdp__card">
@@ -2586,46 +2585,50 @@
                     <h3 class="cdp__title"> <b>River Cleaning Drive</b></h3>
                     <p class="cdp__desc">Cleaned riverbanks and promoted sustainability with community volunteers.</p>
                 </div>
-    
+
                 <!-- Eye & Dental Checkup -->
                 <div class="cdp__card">
                     <img src="images/dental.png" alt="Eye and Dental Check-Up" class="cdp__img">
                     <h3 class="cdp__title"><b>Eye Check-Up</b></h3>
                     <p class="cdp__desc">Organized Eye check-ups for underprivileged children with expert doctors.</p>
                 </div>
-    
+
                 <!-- Book Donation Drive -->
                 <div class="cdp__card">
                     <img src="images/bookdonation.png" alt="Book Donation Drive" class="cdp__img">
                     <h3 class="cdp__title"><b>Book Donation Drive</b></h3>
                     <p class="cdp__desc">Collected books to set up a village library for young learners.</p>
                 </div>
-    
+
                 <!-- Blood Donation Drive -->
                 <div class="cdp__card">
                     <img src="images/blood.png" alt="Blood Donation Drive" class="cdp__img">
                     <h3 class="cdp__title"><b>Blood Donation Drive</b></h3>
-                    <p class="cdp__desc">Contributed to public health and fostered positivity through a donation camp.</p>
-                    <a href="https://drive.google.com/file/d/1TsgdxMMq9QIqnHCZhGzN3zGsdpEYnpPd/view?usp=drive_link" target="_blank" class="cdp__btn">View Certificate</a>
+                    <p class="cdp__desc">Contributed to public health and fostered positivity through a donation camp.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1TsgdxMMq9QIqnHCZhGzN3zGsdpEYnpPd/view?usp=drive_link"
+                        target="_blank" class="cdp__btn">View Certificate</a>
                 </div>
                 <div class="cdp__card">
                     <img src="images/beforeafter.png" alt="Rohin River- Before vs After" class="cdp__img">
                     <h3 class="cdp__title"><b>Rohin River- Before vs After</b></h3>
                     <p class="cdp__desc">Educated locals about sustainibility with community volunteers.</p>
-                    <a href="https://docs.google.com/document/d/1IksBsN5yJq2kc-_hVhSnov1oWlQgjYxX/edit?usp=drive_link&ouid=117898402964545704822&rtpof=true&sd=true" target="_blank"
-                        class="cdp__btn">View More</a>
+                    <a href="https://docs.google.com/document/d/1IksBsN5yJq2kc-_hVhSnov1oWlQgjYxX/edit?usp=drive_link&ouid=117898402964545704822&rtpof=true&sd=true"
+                        target="_blank" class="cdp__btn">View More</a>
                 </div>
                 <div class="cdp__card">
                     <img src="images/den.png" alt="Dental Check Up Drive" class="cdp__img">
                     <h3 class="cdp__title"><b>Dental Check Up Drive</b></h3>
-                    <p class="cdp__desc">Organized Dental check-ups for underprivileged children with expert doctors.</p>
-                    <a href="https://docs.google.com/presentation/d/1wcRu5K3__lbWMxJI8CQBnnajEnHb7UiQ/edit?usp=drive_link&ouid=117898402964545704822&rtpof=true&sd=true" target="_blank"
-                        class="cdp__btn">View More</a>
+                    <p class="cdp__desc">Organized Dental check-ups for underprivileged children with expert doctors.
+                    </p>
+                    <a href="https://docs.google.com/presentation/d/1wcRu5K3__lbWMxJI8CQBnnajEnHb7UiQ/edit?usp=drive_link&ouid=117898402964545704822&rtpof=true&sd=true"
+                        target="_blank" class="cdp__btn">View More</a>
                 </div>
             </div>
-    
+
             <div class="cdp__certificate">
-                <a href="https://drive.google.com/file/d/1ahAu0RjYKizQdzl2g59ranEMiWcuK3Dj/view?usp=drive_link" target="_blank" class="cdp__btn">CDP
+                <a href="https://drive.google.com/file/d/1ahAu0RjYKizQdzl2g59ranEMiWcuK3Dj/view?usp=drive_link"
+                    target="_blank" class="cdp__btn">CDP
                     Certificate</a>
             </div>
         </div>
@@ -2646,7 +2649,7 @@
                         <p>Participated in National Coding Competition 2024</p>
                     </div>
                 </div>
-                
+
                 <div class="gallery-item fade-in delay-1">
                     <img src="images/coding.jpg" alt="Achievement 2">
                     <div class="gallery-overlay">
@@ -3111,8 +3114,7 @@
                 <a href="#contact">Contact</a>
             </div>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/mmahekk24" target="_blank"><i
-                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/mmahekk24" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/mmahek" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://leetcode.com/u/mmahekk24/" target="_blank"><i class="fas fa-code"></i></a>
                 <a href="https://www.hackerrank.com/profile/mmahekk24" target="_blank"><i
@@ -3227,9 +3229,5 @@
             observer.observe(videoCVEl);
         }
     </script>
-
-
-
 </body>
-
 </html>
